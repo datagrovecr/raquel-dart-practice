@@ -1,0 +1,25 @@
+*Strings*
+
+void main() {
+  String message1 = "Dart is great.";
+  String message2 = 'JavaScript is not great.';
+
+  print(message1);
+  print(message2);
+  
+  print("Helo, " "World.");
+  
+  print("\"She isn't worth it,\" his friend replied."); //usar \"" para cancelar las comillas y se impriman
+
+  String name = "Amber";
+  print("$name is my best friend.");
+  print("$name starts with ${name[0]}.");
+  print("Her name contains ${name.length} letters.");
+  
+  print("The doily costs \$4.99.");
+  print(r"The doily costs $4.99.");   //r means no interpolation
+  
+  print("Windows path: C:\\Program Files\\Dart");   //solo imprimira un \
+
+  print("16 + 4 = ${16 + 4}");
+}
