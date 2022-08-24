@@ -1,0 +1,54 @@
+*Boolean Expressions*
+
+void main() {
+  
+  if (1 < 2) {
+    print("1 is less than 2.");
+  } else {
+    print("The world makes no sense.");
+  }
+  
+  print("________________________________________");
+  
+  bool result1 = 1 < 2;
+  bool result2 = true;
+
+  print("1. 8 == 2: ${8 == 2}");
+  print("2. 8 == 8: ${8 == 8}");
+  print("3. 1 == '1': ${1 == '1'}");   //false because are different types.
+  print("4. 3.0 == 3: ${3.0 == 3}");
+  print("5. 'Cat' == 'cat': ${'Cat' == 'cat'}");
+  print("6. 'Cat' == 'Cat': ${'Cat' == 'Cat'}");
+  print("7. result1 == result2: ${result1 == result2}");
+  
+  print("1. 8 > 2: ${8 > 2}");
+  print("2. 8 <= 8: ${8 <= 8}");
+  print("3. 3.58 > 3: ${3.58 > 3}");
+  print("4. 20 >= 85: ${20 >= 85}");
+  print("4. 145 < 146: ${145 < 146}");
+  
+  print("________________________________________");
+  
+  String password = "iamawesome";
+  String userInput = "iamawsome";
+  
+  if (userInput == password) {
+    print("Access granted.");
+  }
+  else {
+    print("Password incorrect. Authorities notified.");
+  }
+  
+  print("________________________________________");
+  
+  int drinkingAge = 21;
+  int userAge = 23;
+  bool isAdult = userAge >= drinkingAge;
+
+  if (isAdult) {
+    print("Have a beer!");
+  }
+  else {
+    print("Come back in a few years.");
+  }
+}
