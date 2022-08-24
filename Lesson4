@@ -1,0 +1,29 @@
+*Operators*
+
+void main() {
+  int x = 7;
+  int y = 5;
+  int product = x * y;
+  
+  print(product);
+  
+  print(5 + 5);
+  print("John " + "Smith");
+  
+  print(5 + 7);          // addition
+  print(10 - 8);         // subtraction
+  print(8 * 8);          // multiplication
+  print(10 / 5);         // division
+  print(10%2);           // modulo
+  print((5 * 5) + 5 / 2);
+  
+  print("_______________________________________");
+  
+  print(x);
+  
+  x++;
+  print(x);
+  
+  x--;
+  print(x);
+}
