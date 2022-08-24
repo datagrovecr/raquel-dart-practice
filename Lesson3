@@ -1,0 +1,12 @@
+*Types*
+
+void main() {
+  dynamic x = 5;
+  int y = 6;
+  String z = "Dart is great.";
+  print(x);
+  print(y);
+  print(z);
+}
+
+
