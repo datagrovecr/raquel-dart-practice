@@ -1,0 +1,14 @@
+*Functions*
+
+void main() {
+  // code for the main() function goes here
+  greet();
+}
+
+void greet() {
+  print("Hi! \n");
+  print("My name is Raquel\n");
+  print("Nice to meet you");
+}
+
+//funtions are like subcharts(raptor)
