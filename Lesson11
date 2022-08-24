@@ -1,0 +1,18 @@
+*The Modulo Operator*
+
+void main() {
+  print(10 % 5);
+  print(11 % 5);
+  print(13 % 8);
+  
+  int number = -8;
+  String parity;
+  
+  if (number % 2 == 0) {
+    parity = "even";
+  } else {
+    parity = "odd";
+  }
+  
+  print("The number $number is $parity.");
+}
