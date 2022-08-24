@@ -1,0 +1,24 @@
+*Booleans*
+
+void main() {
+  bool b = true;
+  
+  if (b) {
+    print("It's true!");
+  } else {
+    print("It's not true. (It's false.)");
+  }
+  
+  bool isLightOn = false;
+  
+  print(isLightOn);
+  print("The light is on. That´s $isLightOn");
+  
+  // someone presses the button
+  isLightOn = !isLightOn;
+  print("The light is on. That´s $isLightOn");
+
+  // someone presses the button again
+  isLightOn = !isLightOn;
+  print("The light is on. That´s $isLightOn");
+}
