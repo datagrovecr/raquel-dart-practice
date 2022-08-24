@@ -1,0 +1,25 @@
+*More About Function Parameters*
+
+void main() {
+  print("Firs run: ");
+  myFunction();
+  print("\nSecond run: ");
+  myFunction("Bob", 54);
+  
+  setFlags(hidden: true);
+}
+
+void myFunction([String name = "Jim", int age = 30, bool retired = false]){
+  print(name);
+  print(age);
+  print(retired);
+}
+
+void exampleMixParameters(String name, int age, [bool retired = false]){
+  
+}
+
+void setFlags({bool bold = false, bool hidden = false}) {
+  print(bold);
+  print(hidden);
+}
