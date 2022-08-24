@@ -1,0 +1,45 @@
+*Switch*
+
+void main() {
+  String characterRace = "elf";
+  
+  switch (characterRace) {
+    case "dwarf":
+      print("Battle Axe");
+      break;
+    case "elf":
+      print("Longbow");
+      break;
+    case "goblin":
+      print("Short Sword");
+      break;
+    case "halfling":
+      print("Dagger");
+      break;
+    case "human":
+      print("Longsword");
+      break;
+    case "orc":
+      print("Mace");
+      break;
+    default:
+      print("Club");
+  }
+  
+  print("");
+  
+  int attackRoll = 2;
+  
+  switch (attackRoll) {
+    case 1:
+    case 2:
+    case 3:
+      print("You missed!");
+      break;
+    case 4:
+    case 5:
+    case 6:
+      print("You hit!");
+      break;
+  }
+}
