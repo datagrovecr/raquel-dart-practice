@@ -1,0 +1,17 @@
+*Making Decisions*
+
+void main() {
+  num cold = 60;
+  num freezing = 40;
+  num temperature = 20;
+
+  print("Is it cold outside?");
+  
+  if (temperature > cold) {
+    print("No, quite toasty, really.");
+  } else if (temperature > freezing) {
+    print("It is a bit cold. Perhaps a jacket.");
+  } else {
+    print("It's freezing! Where's my coat?");
+  }
+}
