@@ -1,0 +1,45 @@
+*Function Parameters*
+
+void main() {
+  // code for the main() function goes here
+  greet("Joe");
+  greet("Fred");
+  
+  sum(5, 10);
+  
+  repeatPrint("Hello!", 10);
+  
+  print("_____________________");
+  
+  cocacola(20);
+}
+
+void greet(String recipient) {
+  print("Hi, $recipient!");
+}
+
+void sum(int a, int b){
+  print(a + b);
+}
+
+void repeatPrint(String str, int repetitions){
+  for (int i = 0; i < repetitions; i++){
+    print(str);
+  }
+}
+
+void cocacola(int bottles){
+  do {
+    print("$bottles bottles of Cocacola on the wall, $bottles bottles of CocaCola.");
+    print("You take one down, pass it around... ");
+    if(bottles == 2){
+      print("${bottles - 1} bottle of CocaCola on the wall.\n");
+    }else{
+      print("${bottles - 1} bottles of CocaCola on the wall.\n");
+    }
+    bottles--;
+  } while (bottles > 0);
+}
+
+
+//funtions are like subcharts
