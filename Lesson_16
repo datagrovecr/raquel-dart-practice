@@ -1,0 +1,42 @@
+*For Loops*
+
+void main() {
+  
+  for (int i = 0; i < 10; i++) {  //The final statement is evaluated only on the second and subsequent iterations of the loop.
+    print(i);
+  }
+  
+  print("______________");
+    
+  for (int i = 1; i < 11; i++) {
+    print(i);
+  }
+  
+  print("______________");
+
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+  
+  print("______________");
+
+  for (int i = 0; i < 10; i++) {
+    print(i + 1);
+  }
+    
+  print("______________");
+  
+  for(int beers = 99; beers > 0; beers--){
+    print("$beers bottles of beer on the wall, $beers bottles of beer.");
+    print("You take one down, pass it around...");
+    print("${beers - 1} bottles of beer on the wall.\n");
+  }
+  
+  int total = 0;
+  
+  for (int x = 1; x <=10; x++){
+    total+= x;
+  }
+  
+  print("Sum of numbers 1-10: $total");
+}
