@@ -1,0 +1,21 @@
+*Compound Assignment Operators*
+
+void main() {
+  int x = 5;
+  num y = 5;
+  
+  print(x + 5);   //no modifica la variable
+  print(x);
+  
+  print(x += 5);  //modifica la variable con +=
+  print(x);
+  
+  x -= 5;
+  x *= 2;
+  y /= 2;         //definir la variable como num, para que permita numeros int y double
+  
+  print(y);
+  
+  x ~/= 2;        //  ~/ para que el resultado de la divicion sea int
+  print(x);
+}
