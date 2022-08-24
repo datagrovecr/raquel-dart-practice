@@ -1,0 +1,41 @@
+*Switching Grades*
+
+void main() {
+  num score = -5;
+  String grade= "";
+  String rating = "";
+  
+  if (score >100) {
+    print("That is imposible");
+  }else if(score >= 90) {
+    grade = "A";
+  } else if (score >= 80) {
+    grade = "B";
+  } else if (score >= 70) {
+    grade = "C";
+  } else if (score >= 60) {
+    grade = "D";
+  } else if (score > 0){
+    grade = "F";
+  } 
+  else {
+    print ("What do you do to have that score?");
+  }
+  
+  if(grade != ""){
+    print("Score: $score");
+  print("Grade: $grade");
+  
+    switch (grade) {
+      case "A": rating = "Excellent"; break;
+      case "B": rating = "Good"; break;
+      case "C": rating = "Average"; break;
+      case "D": rating = "Deficient"; break;
+      case "F": rating = "Failing"; break;
+    }
+    
+    print("Rating: $rating");
+    
+  }
+
+}
