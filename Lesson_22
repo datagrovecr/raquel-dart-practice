@@ -1,0 +1,75 @@
+*Examining Strings*
+
+void main(){
+  String name = "Russell";
+  String lastName = "";
+  String str = "Dart is great.";
+  
+  print("This name contains ${name.length} letters.");
+  print("firsName\n Empty: ${name.isEmpty}\n Not Empty: ${name.isNotEmpty}");
+  print("lastName\n Empty: ${lastName.isEmpty}\n Not Empty: ${lastName.isNotEmpty}");
+  
+  if(lastName.isEmpty){
+    print("You don't seem to have a last name!");
+  }
+  
+  if(str.startsWith("D")){
+    print('The string starts with "D"');
+  }
+  
+  if(str.endsWith("eat.")){
+    print('The last character of the string are "eat."');
+  }
+  
+  int indexOfS = str.indexOf("s");
+  int indexOfGreat = str.indexOf("great");
+  int indexOfJavaScript = str.indexOf("JavaScript");
+  int indexOfT = str.indexOf("t");
+  
+  print("Index of s: $indexOfS");
+  print("Index of great: $indexOfGreat");
+  print("Index of JavaScript: $indexOfJavaScript");
+  print("Last index of t: $indexOfT");
+  
+  if (str.contains("t")){
+    print('This string definitely has a "t"');
+  }
+  
+  if (!str.contains("JavaScript")){
+    print("No JavaScript here!");
+  }
+  
+  print("Index 3 (the fourth character): ${str[3]}");
+  
+  if (str[5] == "i"){
+    print('The character at index 5 is "i"');
+  }
+  
+  for (int i = 0; i < str.length; i++){
+    print(str[i]);
+  }
+  
+  print("___________________");
+  
+  print(reverseString("I love you"));
+  
+  practice();
+}
+
+String reverseString(String input){
+  String output = "";
+  for (int i = input.length - 1; i>=0; i--){
+    output += input[i];
+  }
+
+  return output;
+}
+
+void practice(){
+    String password = "Welcome123";
+    if (password.length != 10){
+      print("Your password should have 3 numbers");
+    }else{
+      print("Nice password.");
+    }
+}
