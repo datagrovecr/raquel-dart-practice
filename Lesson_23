@@ -1,0 +1,46 @@
+*Modifying Strings*
+
+void main(){
+  String userInput = "    Jhon   ";
+  String name = "Raquel";
+  String name1 = "Terrence";
+  String name2 = "Philip";
+  String name3 = "philip";
+  
+  userInput = userInput.trim();
+  print(userInput);
+  
+  print(name.padLeft(12));
+  print(name.padLeft(12, "*"));
+  
+  print(compareStrings(name1, name2));
+  print(compareStrings(name2, name3));
+  print(compareStrings(name2, name3, caseSensitive: true));
+  
+  print(name3.toUpperCase());
+  print(name3.substring(2));       // result: "ilip"
+  print(name3.substring(2, 4));    // result: "il"
+  
+  print(capitalize(name3));
+  
+  String headline = "Donald Trump Orders Nuclear Strike On Disneyland";
+  print(headline.replaceAll("Trump", "Duck"));
+}
+
+bool compareStrings(String a, String b, {bool caseSensitive = false}){
+  if (!caseSensitive){
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+  }
+  
+  return a==b;
+}
+
+//String capitalize(String input){
+//String firstLetter = input[0].toUpperCase();
+//String restOfString = input.substring(1);
+  
+//return "$firstLetter$restOfString";
+//}
+
+String capitalize(String s) => "${s[0].toUpperCase()}${s.substring(1)}";
