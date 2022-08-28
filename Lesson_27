@@ -1,0 +1,35 @@
+*Constants*
+
+//const num pi = 3.14;
+import "dart:math";
+const List<String> months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
+void main() {
+  print("Pi: $pi");
+  print("Diameter: 6 -> Circumference: ${circumferenceFromDiameter(6)}");
+  print("Radius: 3 -> Circumference: ${circumferenceFromRadius(3)}");
+  
+  print("Month 8: ${monthName(8)}");
+}
+
+num circumferenceFromDiameter(num diameter) => pi * diameter;
+
+num circumferenceFromRadius(num radius) => (2 * pi) * radius;
+
+String monthName(int monthNumber){
+  assert(monthNumber >= 1 && monthNumber <=12, "out of range.");
+  return months[monthNumber - 1];
+}
