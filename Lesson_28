@@ -1,0 +1,12 @@
+*Final Variables*
+
+void main() {
+  String firstName = "Raquel";
+  String lastName = "Abarca";
+  final String name = "$firstName $lastName";
+  
+  final age = 19;
+
+  print(name);
+  print(age);
+}
