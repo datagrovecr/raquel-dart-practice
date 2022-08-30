@@ -5,11 +5,14 @@
 --How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
 
 
-int nbYear(num p0, double percent, int aug, int p) {
+int nbYear(num p0, num percent, num aug, num p) {
   int i=0;
-  do{
+  
+    while(p0 < p){
     p0 = p0 + p0*(percent/100)+aug;
+    p0 = p0.toInt();
     i++;
-  }while(p0 < p);
+    
+  }
   return (i);
 }
