@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/dart
+**Task**
+**Given an integral number, determine if it's a square number:**
+
+import "dart:math";
+isSquare(n) { 
+  
+  if(n>=0){
+    num raiz = sqrt(n);
+    
+    num i = raiz.round(); 
+    
+    if (i - raiz == 0)
+    {
+    return(true);
+    }else{
+      return(false);
+    }  
+  }else{
+    return(false);
+  }
+
+}
